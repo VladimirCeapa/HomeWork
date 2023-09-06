@@ -16,7 +16,7 @@ public class homeworkNr2 {
 
         double Price =54.2345F;
         double Tax =33.478F;
-        int  Quantity=52;
+        int  Quantity=53;
         double sum =0;
 
         System.out.println(Price);
