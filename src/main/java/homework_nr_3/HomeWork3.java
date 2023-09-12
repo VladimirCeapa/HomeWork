@@ -53,10 +53,9 @@ public class HomeWork3 {
         }
 
         float total = 0;
-        int t = 3;
-        for (float i = 1; i < 100; i += 2) {
-            total = (i / t);
-            t += i;
+
+        for (float i = 1; i < 98; i += 2) {
+            total += (i / (i + 2));
         }
         System.out.println("total:= " + total);
     }
