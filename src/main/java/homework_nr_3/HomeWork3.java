@@ -48,7 +48,7 @@ public class HomeWork3 {
         for (int i = 100; i <= 1000; i++) {
 
             if (i % 5 == 0) {
-                System.out.println(i);
+               // System.out.println(i);
             }
         }
 
@@ -56,6 +56,7 @@ public class HomeWork3 {
 
         for (float i = 1; i < 98; i += 2) {
             total += (i / (i + 2));
+            System.out.println("total:= " + total);
         }
         System.out.println("total:= " + total);
     }
