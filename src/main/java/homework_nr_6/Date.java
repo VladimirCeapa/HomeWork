@@ -7,7 +7,7 @@ public class Date {
 
 
     public void setDay(int day) {
-        if (day < 1 || day > 31) {
+        if (day < 1 || day >= 31) {
             System.out.println("data day entry error");
         } else {
             this.day = day;
@@ -15,7 +15,7 @@ public class Date {
     }
 
     public void setMonth(int month) {
-        if (month < 1 || month > 12) {
+        if (month < 1 || month >= 12) {
             System.out.println("data month entry error");
         } else {
             this.month = month;
