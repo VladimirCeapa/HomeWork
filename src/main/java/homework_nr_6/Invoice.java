@@ -59,3 +59,4 @@ public class Invoice {
         return (double) productPrice * numberOfProductsPurchased;
     }
 }
+
