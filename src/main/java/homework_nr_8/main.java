@@ -17,7 +17,7 @@ public class main {
         //working with a dictionary
         HashMap<String, String> newWords = new HashMap<>();
 
-        newWords.put("ironn", "cone");
+        newWords.put("iron", "cone");
         newWords.put("jump rope", "a sări coarda");
         newWords.put("squirrel", "veveriţă");
         newWords.put("dictionary", "dicţionar");
@@ -28,11 +28,15 @@ public class main {
         newWords.put("candle", "lumânare");
         newWords.put("flowers", "floare");
 
-//        translation(newWords, "book");
-//        translation(newWords, "flowers");
-//        translation(newWords, "carte");
-//        translation(newWords,"turtă dulce");
-        translation(newWords,"dulce");
+        translation(newWords, "book");
+        translation(newWords, "flowers");
+        translation(newWords, "carte");
+
+        translation(newWords,"error"); //absence check
+
+        translation(newWords,"turtă dulce");
+
+        translation(newWords,"gresala");//absence check
     }
 
     static void toDoList(List<String> input) {
