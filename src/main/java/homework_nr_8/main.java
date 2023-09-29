@@ -56,7 +56,7 @@ public class main {
 
     }
 
-    static void line() {
+    public static void line() {
         System.out.println("-------------------------------------------------------------------------- ");
     }
 
