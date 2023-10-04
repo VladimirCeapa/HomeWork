@@ -19,6 +19,7 @@ public class main {
         System.out.println(elephant1.sound());
         elephant1.info();
         line();
+        line();
 
 
     }
