@@ -17,7 +17,7 @@ public class main {
         //working with a dictionary
         HashMap<String, String> newWords = new HashMap<>();
 
-        newWords.put("iron ", "cone");
+        newWords.put("iron", "cone");
         newWords.put("jump rope", "a sări coarda");
         newWords.put("squirrel", "veveriţă");
         newWords.put("dictionary", "dicţionar");
