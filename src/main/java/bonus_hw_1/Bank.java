@@ -51,6 +51,10 @@ public class Bank {
         }
     }
 
+    private void line() {
+        System.out.println("___________________________________________________________________");
+    }
+
     public void fullInfoBankList(List<BankAccount> inputBA) {
         for (BankAccount element :
                 inputBA) {
