@@ -37,7 +37,7 @@ public class main {
 
         translation(newWords,"turtă dulce");
 
-        translation(newWords,"gresala");//absence check
+        translation(newWords,"gresala"); //absence check
     }
 
     static void toDoList(List<String> input) {

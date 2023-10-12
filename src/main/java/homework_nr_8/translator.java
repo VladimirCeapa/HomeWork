@@ -24,7 +24,7 @@ public class translator {
         if (!key ) {
             for (String k : input.keySet()) {
                 if (word.equals(input.get(k))) {
-                    System.out.println("traducere din română în engleză " + word + "-" + k);
+                    System.out.println("traducere din română în engleză " + word + "- " + k);
                     value=true;
                     line();
 
