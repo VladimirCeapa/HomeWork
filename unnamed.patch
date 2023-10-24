@@ -1,0 +1,134 @@
+Index: src/main/java/homework_nr_9/Animal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/homework_nr_9/Animal.java b/src/main/java/homework_nr_9/Animal.java
+new file mode 100644
+--- /dev/null	(revision 588c048fa3ff8d394781279f84f889270926e71c)
++++ b/src/main/java/homework_nr_9/Animal.java	(revision 588c048fa3ff8d394781279f84f889270926e71c)
+@@ -0,0 +1,9 @@
++package homework_nr_9;
++
++interface Animal{
++
++    void move();
++    static void run(){}
++    default void stop(){}
++     String sound();
++}
+\ No newline at end of file
+Index: src/main/java/homework_nr_9/Elephant.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/homework_nr_9/Elephant.java b/src/main/java/homework_nr_9/Elephant.java
+new file mode 100644
+--- /dev/null	(revision 588c048fa3ff8d394781279f84f889270926e71c)
++++ b/src/main/java/homework_nr_9/Elephant.java	(revision 588c048fa3ff8d394781279f84f889270926e71c)
+@@ -0,0 +1,42 @@
++package homework_nr_9;
++
++public class Elephant extends Erbivor implements Animal {
++
++    String color;
++    String size;
++    String name;
++
++    public Elephant(String height, String length, String color, String size, String name) {
++        super(height, length);
++        this.color = color;
++        this.size = size;
++        this.name = name;
++    }
++
++    public void info(){
++        System.out.println("Elephant is "+color+" and "+size);
++
++    }
++
++    @Override
++    public void move() {
++        System.out.println("Elephant is moving");
++    }
++    @Override
++    public void stop() {
++        Animal.super.stop();
++        System.out.println("elephant stopped");
++    }
++
++    @Override
++    public String sound() {
++        return "elephant trumpets";
++    }
++
++    @Override
++    void eating(String s) {
++        System.out.println("Elephant is eating "+s);
++    }
++
++
++}
+Index: src/main/java/homework_nr_9/Erbivor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/homework_nr_9/Erbivor.java b/src/main/java/homework_nr_9/Erbivor.java
+new file mode 100644
+--- /dev/null	(revision 588c048fa3ff8d394781279f84f889270926e71c)
++++ b/src/main/java/homework_nr_9/Erbivor.java	(revision 588c048fa3ff8d394781279f84f889270926e71c)
+@@ -0,0 +1,15 @@
++package homework_nr_9;
++
++public abstract class Erbivor {
++String height ;
++String length;
++
++    public Erbivor(String height, String length) {
++        this.height = height;
++        this.length = length;
++    }
++    abstract void eating(String s);
++    public void sleeping(){
++        System.out.println("Animal is sleeping");
++    };
++}
+Index: src/main/java/homework_nr_9/main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/homework_nr_9/main.java b/src/main/java/homework_nr_9/main.java
+new file mode 100644
+--- /dev/null	(revision 588c048fa3ff8d394781279f84f889270926e71c)
++++ b/src/main/java/homework_nr_9/main.java	(revision 588c048fa3ff8d394781279f84f889270926e71c)
+@@ -0,0 +1,27 @@
++package homework_nr_9;
++
++import static homework_nr_8.main.line;
++
++public class main {
++    public static void main(String[] args) {
++        Elephant elephant = new Elephant("1.5m", "2m", "grew", "big", "Bombom");
++        line();
++        elephant.move();
++        elephant.stop();
++        System.out.println(elephant.sound());
++        elephant.info();
++        Elephant elephant1 = new Elephant("0.5m", "1m", "white", "small", "Jumbo");
++        line();
++        elephant1.eating("bananas");
++        elephant1.sleeping();
++        elephant1.move();
++        elephant1.stop();
++        System.out.println(elephant1.sound());
++        elephant1.info();
++        line();
++        line();
++
++
++    }
++
++}
