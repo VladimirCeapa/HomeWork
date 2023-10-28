@@ -1,12 +1,22 @@
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 class test{
     public static void main(String[] args) {
-         int  [] s ={1,2,3,4,5,6,7,8,9};
-         for(int si:s){
-             System.out.println(si);
-         }
-        System.out.println(Arrays.toString(s));
+        List<String> s1=new ArrayList<>(){};
+        List<String> s2=new ArrayList<>(){};
+        s1.add("BBBB");
+        s1.add("aaa");
+        printLis(s1,s2);
+        System.out.println(s2);
+    }
+    public static void printLis(List<? extends String>el,List<String> w){
+        for (Object e:
+             el) {
+            System.out.println(e);
+            w.add(el.get(0));
+        }
     }
 }
