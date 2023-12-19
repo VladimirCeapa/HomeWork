@@ -5,7 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+<<<<<<< HEAD
     <artifactId>HomeWork1</artifactId>
+=======
+    <artifactId>Sweeper</artifactId>
+>>>>>>> b655d77 (work game Sweeper)
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,6 +17,7 @@
         <maven.compiler.target>19</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+<<<<<<< HEAD
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
@@ -22,4 +27,7 @@
         </dependency>
     </dependencies>
 
+=======
+    
+>>>>>>> b655d77 (work game Sweeper)
 </project>
